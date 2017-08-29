@@ -1,0 +1,14 @@
+
+<% @snippets.each do |snippet| %>
+    <section>
+        <div id="qa">
+            <p id="question"><%= snippet.question %></p>
+            <p id="answer"><%= snippet.answer %></p>
+        </div>
+        <div id="edit">
+            <p>Edit</p>
+            <p>Delete</p>
+        </div>
+        <br>
+    </section>
+<% end %>
