@@ -15,14 +15,17 @@ class SnippetController < ApplicationController
     end
 
     def edit
+        @snippet = Snippet.find(params[:id])
     end
 
     def update
+        @snippet = Snippet.find(params[:id])
         @snippet.update(snippet_params)
         redirect_to "/"
     end
 
     def destroy
+        @snippet = Snippet.find(params[:id])
         @snippet.destroy
         redirect_to "/"
     end

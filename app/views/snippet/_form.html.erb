@@ -1,0 +1,17 @@
+<%= form_for @snippet do |f| %>
+
+    <div class="field">
+        <%= f.label :question %>
+        <%= f.text_field :question, autofocus: true %>
+    </div>
+
+    <div class="field">
+        <%= f.label :answer %>
+        <%= f.text_field :answer %>
+    </div>
+
+    <div class="actions">
+        <%= f.submit "Submit" %>
+    </div>
+
+<% end %>
