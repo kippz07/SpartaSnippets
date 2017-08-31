@@ -23,6 +23,9 @@ class Pi < ApplicationRecord
         id
     end
 
+    def self.snippet(id)
+        Snippet.find(id)
+    end
     
 
 end

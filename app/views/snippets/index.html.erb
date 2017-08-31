@@ -1,0 +1,18 @@
+
+<p><%= link_to 'New', "/snippets/new" %></p>
+
+<aside>
+    <% @snippets.each do |snippet| %>
+        <section>
+            <div id="qa">
+                <p id="question"><%= snippet.question %></p>
+                <p id="answer"><%= snippet.answer %></p>
+            </div>
+            <div id="edit">
+                <p><%= link_to 'Edit', edit_snippet_path(snippet) %></p>
+                <p><%= link_to 'Delete', snippet, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            </div>
+            <br>
+        </section>
+    <% end %>
+</aside>

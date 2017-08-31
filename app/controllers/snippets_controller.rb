@@ -1,4 +1,4 @@
-class SnippetController < ApplicationController
+class SnippetsController < ApplicationController
 
     def index
         @snippets = Snippet.all
