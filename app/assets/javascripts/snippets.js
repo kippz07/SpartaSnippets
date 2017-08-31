@@ -16,7 +16,7 @@ $(function() {
             $("#a").text(data.answer)
             console.log(data);
         });
-    }, 5000);
+    }, 3000);
 
     $("#play-link").click(function (element) {
         launchFullScreen(document.documentElement);
