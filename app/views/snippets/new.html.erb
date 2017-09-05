@@ -1,17 +1,5 @@
 <div>
     <h1>Submit a new snippet</h1>
-    <div class="field">
-        <%= f.label :question %>
-        <%= f.text_field :question, autofocus: true, id: "ques" %>
-    </div>
-
-    <div class="field">
-        <%= f.label :answer %>
-        <%= f.text_field :answer, id: "ans" %>
-    </div>
-
-    <div class="actions">
-        <%= f.submit "Submit", id: "submit-snip" %>
-    </div>
+    <%= render 'form', snippet: @snippet %>
     <%= link_to 'Back', "/" %>
 </div>

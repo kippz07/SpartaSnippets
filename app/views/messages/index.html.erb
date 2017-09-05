@@ -1,3 +1,10 @@
-<%= @question %>
+<p id="mes-question"><%= @question %></p>
 <br>
-<%= @answer %>
+<p id="mes-answer"><%= @answer %></p>
+
+<%= form_with model: Snippet.new do |f| %>
+    <% @messages = Message.new %>
+    <%= f.hidden_field :question, value: @messages.get_question %>
+    <%= f.hidden_field :answer, value: @messages.get_answer %>
+    <%= f.submit id: 'submit-new', value: "" %>
+<% end %>

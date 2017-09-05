@@ -10,9 +10,12 @@ class Message
     end
 
     def get_message
-        token = "xoxp-2229741132-197080754310-234540865043-b6795f4eee3aa018346d537558889a7c"
+        token = "xoxp-2229741132-197080754310-235834396518-4542812565c43fca38f1bbd14a5859e8"
         client = Slack::Client.new token: token
-        a = client.channels_history(channel: "C6K2ZPHNW", count: 1)
+        # a = client.channels_history(channel: "C6K2ZPHNW", count: 1) #devops-2
+        a = client.channels_history(channel: "C6XK84HUM", count: 1) #sparta-snippets
+        # c = client.channels_list()
+        # puts c
         message = a["messages"].first["text"]
         array = message.split("\n")
     end

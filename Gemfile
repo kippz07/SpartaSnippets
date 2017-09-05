@@ -8,6 +8,8 @@ end
 gem 'slack-api'
 gem 'pry'
 
+gem 'devise'
+
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
 gem 'jquery-rails'

@@ -1,3 +1,7 @@
+#main-section {
+    padding-top: 5px;
+}
+
 #qa {
     display: inline-block;
     width: 515px;
@@ -9,7 +13,7 @@
     vertical-align: super;
 }
 
-section {
+#lists {
     border-style: solid;
     display: inline-block;
     margin-bottom: -3px;
@@ -17,4 +21,12 @@ section {
 
 aside {
     width: 570px;
+}
+
+#new {
+    display: inline-block;
+}
+
+#play-link {
+    display: inline-block;
 }

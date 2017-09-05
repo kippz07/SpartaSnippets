@@ -1,5 +1,5 @@
 class PiController < ApplicationController
-
+    # before_action :authenticate_user!
     def index
         @snippets = Snippet.all
         @id = Pi.get_snippet(@snippets)

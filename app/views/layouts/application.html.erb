@@ -13,6 +13,11 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
+
+    <p><%= render 'devise/menu/registration_items' %> | </p>
+    <p><%= render 'devise/menu/login_items' %></p>
   </body>
 </html>
