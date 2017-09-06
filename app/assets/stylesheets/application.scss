@@ -14,3 +14,26 @@
  *= require_self
  */
 
+header p {
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 17px;
+}
+
+header {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.nav-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.alert {
+    padding: 7px;
+    font-size: 17px;
+}
+
+

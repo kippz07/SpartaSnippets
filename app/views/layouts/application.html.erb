@@ -13,11 +13,20 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
+    <header>
+      <p id="reg-items"><%= render 'devise/menu/registration_items' %></p>
+      <p>|</p>
+      <p id="login-items"><%= render 'devise/menu/login_items' %></p>
+    </header>
+
+    <div id="nav-right">
+      <p class="notice nav-right"><%= notice %></p>
+      <p class="alert nav-right"><%= alert %></p>
+    </div>
+    
     <%= yield %>
 
-    <p><%= render 'devise/menu/registration_items' %> | </p>
-    <p><%= render 'devise/menu/login_items' %></p>
+    
   </body>
 </html>

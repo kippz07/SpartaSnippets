@@ -28,6 +28,7 @@ Rails.application.configure do
 
   # For devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.secret_key = '91895b5c1b55b558f24d920c4336ffc7a3aeda76cdf609e24ec36ac9bc9cb140722e60e99afb9885e75034d16958fcd2557d7a7b8738c3c551e7279ced04b4a2'
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
