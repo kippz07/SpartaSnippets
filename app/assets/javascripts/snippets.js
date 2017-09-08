@@ -11,13 +11,14 @@ $(function() {
     }
 
     setInterval(function () {
-        // if(window.location.href == "https://spartasnippets.herokuapp.com/pi") {
-        if(window.location.href == "http://localhost:3000/pi") {
-            // $.get("https://spartasnippets.herokuapp.com/pi.json", function (data) {
-            $.get("pi.json", function (data) {
+        if(window.location.href == "https://spartasnippets.herokuapp.com/pi") {
+        // if(window.location.href == "http://localhost:3000/pi") {
+            $.get("https://spartasnippets.herokuapp.com/pi.json", function (data) {
+            // $.get("pi.json", function (data) {
                 $("#q").text(data.question);
                 $("#a").text(data.answer);
             });
+            console.log("url correct");
         }    
     }, 3000);
 
