@@ -18,7 +18,6 @@ $(function() {
                 $("#q").text(data.question);
                 $("#a").text(data.answer);
             });
-            console.log("url correct");
         }    
     }, 3000);
 
