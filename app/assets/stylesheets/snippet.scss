@@ -10,23 +10,49 @@
 
 #edit {
     display: inline-block;
-    vertical-align: super;
+    vertical-align: top;
 }
 
 #lists {
     border-style: solid;
     display: inline-block;
-    margin-bottom: -3px;
+    margin-bottom: -2px;
+    padding: 8px;
 }
 
-aside {
-    width: 570px;
+#snippet-aside {
+    width: 585px;
+    margin-left: 56px;
+    display: inline-block;
+}
+
+#menu-aside {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 36px;
 }
 
 #new {
-    display: inline-block;
+    border-style: solid;
+    padding: 20px;
+    background-color: #37fb37;
+    margin-bottom: 10px;
+}
+
+#new:hover {
+    cursor: pointer;
 }
 
 #play-link {
-    display: inline-block;
+    border-style: solid;
+    padding: 20px;
+    background-color: red;
+}
+
+#play-link:hover {
+    cursor: pointer;
+}
+
+#menu-aside p {
+    margin: 0;
 }

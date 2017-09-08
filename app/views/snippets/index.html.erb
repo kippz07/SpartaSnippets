@@ -1,12 +1,7 @@
 
 <section id="main-section">
 
-    <div id="menu">
-        <p id="new"><%= link_to 'New', "/snippets/new" %></p>
-        <p id="play-link"><%= link_to 'Play', "/pi" %></p>
-    </div>
-
-    <aside>
+    <aside id="snippet-aside">
         <% @snippets.each do |snippet| %>
             <section id="lists">
                 <div id="qa">
@@ -20,6 +15,15 @@
                 <br>
             </section>
         <% end %>
+    </aside>
+
+    <aside id="menu-aside">
+        <div id="new" onclick="window.location = '/snippets/new/'">
+            <p>New</p>
+        </div>
+        <div id="play-link" onclick="window.location = '/pi'">
+            <p>Play</p>
+        </div>
     </aside>
 
 </section>

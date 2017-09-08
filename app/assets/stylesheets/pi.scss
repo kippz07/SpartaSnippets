@@ -9,7 +9,7 @@
 }
 
 #pi-snippets {
-    margin-top: 232px;
+    margin-top: 154px;
 }
 
 #break {
@@ -20,4 +20,19 @@
 p {
     font-family: "Skia";
     color: "#0000FF";
+}
+
+#fullscreen-button {
+    position: fixed;
+    right: 22px;
+    top: 8px;
+    p {
+        font-size: 17px;
+        color: #337ab7;
+    }
+    p:hover {
+        cursor: pointer;
+        color: black;
+        text-decoration: underline;
+    }
 }
