@@ -1,24 +1,23 @@
-# README
+# Sparta Snippets
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Web app for the Sparta Global breakout space screens. Shows 'snippets' of information relating to the courses running, which rotate after 30 seconds or so. Snippets can be added, edited or deleted by logging into the app as an admin. In future, snippets wil be able to be added via Slack.
 
-Things you may want to cover:
+View the live site at https://spartasnippets.herokuapp.com/
 
-* Ruby version
+## Package versions
 
-* System dependencies
+ruby 2.4
+rails 5.1.2
+pg 0.18
+PostgreSQL 9.6.3
 
-* Configuration
+## App and database setup
 
-* Database creation
+Clone repo into a new folder and run `bundle install` to install the required gems.
 
-* Database initialization
+Start up a postgres server and set up database by doing:
 
-* How to run the test suite
+`rake db:drop db:create db:migrate db:seed`
 
-* Services (job queues, cache servers, search engines, etc.)
+Run the rails server with `rails s`.
 
-* Deployment instructions
-
-* ...
