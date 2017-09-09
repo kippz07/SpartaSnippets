@@ -27,5 +27,4 @@ class Pi < ApplicationRecord
         Snippet.find(id)
     end
     
-
 end

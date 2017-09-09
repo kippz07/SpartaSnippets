@@ -31,15 +31,10 @@ $(function() {
         var state = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen;
         var event = state ? 'FullscreenOn' : 'FullscreenOff';
 
-        // Now do something interesting
         if(event == 'FullscreenOff'){
             $("header").slideDown();
             $("#fullscreen-button").slideDown();
         }  
     });
-
-    // setInterval(function () {
-    //     $("#submit-new").submit();
-    // }, 2000);
 
 });

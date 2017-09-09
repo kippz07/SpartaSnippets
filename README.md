@@ -1,6 +1,6 @@
 # Sparta Snippets
 
-Web app for the Sparta Global breakout space screens. Shows 'snippets' of information relating to the courses running, which rotate after 30 seconds or so. Snippets can be added, edited or deleted by logging into the app as an admin. In future, snippets wil be able to be added via Slack.
+Web app for the Sparta Global breakout space screens. Shows 'snippets' of information relating to the courses running, which rotate after 30 seconds or so. Snippets can be added, edited or deleted by logging into the app as an admin. Snippets can also be added via a Sparta Global Slack channel, these can only be viewed on the live site.
 
 View the live site at https://spartasnippets.herokuapp.com/
 

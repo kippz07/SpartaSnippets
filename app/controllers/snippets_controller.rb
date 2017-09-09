@@ -6,8 +6,6 @@ class SnippetsController < ApplicationController
         redirect_to '/users/sign_in' unless current_user && access_whitelist
     end
 
-    # before_action :authenticate_user
-
     def index
         @snippets = Snippet.all
     end
@@ -23,7 +21,6 @@ class SnippetsController < ApplicationController
     def create
         @snippet = Snippet.create(snippet_params)
         @snippet.save
-        # redirect_to "/"
     end
 
     def edit
