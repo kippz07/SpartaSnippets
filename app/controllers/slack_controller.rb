@@ -9,8 +9,8 @@ class SlackController < ApplicationController
         #     puts params[:user_name]
         # end
         text = params[:text]
-        text.split("$")
-        @snippet = Snippet.create(question: text[1], answer: text[2])
+        array = text.split('$')
+        @snippet = Snippet.create(question: array[1], answer: array[2])
         @snippet.save
      
     end
