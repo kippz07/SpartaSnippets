@@ -9,7 +9,7 @@ class SlackController < ApplicationController
         #     puts params[:user_name]
         # end
         snippet = Snippet.new
-        @snippet = Snippet.create(question: params[:user_name], answer:[:text])
+        @snippet = Snippet.create(question: params[:user_name], answer: params[:text])
         @snippet.save
      
     end
