@@ -9,9 +9,14 @@ class SlackController < ApplicationController
         #     puts params[:user_name]
         # end
 
-        @snippet = Snippet.create(params[:user_name], params[:text])
+        @snippet = Snippet.create(snippet_params)
         @snippet.save
      
     end
+
+    private
+        def snippet_params
+            params.permit(:question, :answer)
+        end
 
 end
