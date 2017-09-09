@@ -11,8 +11,7 @@ class SlackController < ApplicationController
 
         @snippet = Snippet.create(params[:user_name], params[:text])
         @snippet.save
-
-        render json: { text: "Recieved" }       
+     
     end
 
 end
