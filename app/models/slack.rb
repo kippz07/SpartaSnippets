@@ -1,2 +1,2 @@
-class Slack
-end
+# class Slack < ApplicationRecord
+# end
