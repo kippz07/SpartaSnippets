@@ -6,19 +6,13 @@ $(function() {
     var $body = $('body');
 
     setInterval(function () {
-        // if(window.location.href == "https://spartasnippets.herokuapp.com/pi") {
-        if(window.location.href == 'http://localhost:3000/pi') {
-            // $.get("https://spartasnippets.herokuapp.com/pi.json", function (data) {
-            $.get('pi.json', function (data) {
+        if(window.location.href == "https://spartasnippets.herokuapp.com/pi") {
+        // if(window.location.href == 'http://localhost:3000/pi') {
+            $.get("https://spartasnippets.herokuapp.com/pi.json", function (data) {
+            // $.get('pi.json', function (data) {
                 $('#q').text(data.question);
                 $('#a').text(data.answer);
             });
-            // console.log(length);
-            // var curLength = arrayLength.html();
-            // length = checkForNewSnippets(length, curLength);
-            // console.log(curLength);
-            // console.log(length);
-            
         }
     }, 3000);
 
@@ -42,15 +36,6 @@ $(function() {
         }  
     });
 
-    // function checkForNewSnippets (oldLength, curLength) {
-    //     if (curLength != oldLength) {
-    //         window.location.reload();
-    //         launchFullScreen(document.documentElement);
-    //         console.log("releaded");
-    //     } 
-    //     return curLength;
-    // }
-
     function launchFullScreen (element) {
         if(element.requestFullScreen) {
         element.requestFullScreen();
@@ -66,5 +51,4 @@ $(function() {
             $image.css('padding-bottom', '0px');
         }, 20);
     }
-
 });
