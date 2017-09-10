@@ -8,7 +8,7 @@ class SlackController < ApplicationController
             if array.length == 3
                 @snippet = Snippet.create(question: array[1], answer: array[2])
                 @snippet.save
-                render json: { text: "Snippet added" }
+                render json: { text: "Snippet added :)" }
             end
         end
     end

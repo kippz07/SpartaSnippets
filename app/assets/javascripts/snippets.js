@@ -12,7 +12,7 @@ $(function() {
                 $("#a").text(data.answer);
             });
             var curLength = arrayLength.html();
-            checkForNewSnippets(length, curLength);
+            length = checkForNewSnippets(length, curLength);
         } 
     }, 3000);
 
@@ -36,7 +36,6 @@ $(function() {
             window.location.reload();
             launchFullScreen(document.documentElement);
             console.log("releaded");
-            length = curLength;
         }  
     }
 
