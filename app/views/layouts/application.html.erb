@@ -19,6 +19,10 @@
         <p id="reg-items"><%= render 'devise/menu/registration_items' %></p>
         <p>|</p>
         <p id="login-items"><%= render 'devise/menu/login_items' %></p>
+        <% if @admin %>
+          <p>|</p>
+          <p id="admin">manage</p>
+        <% end %>
       </div>
     </header>
 

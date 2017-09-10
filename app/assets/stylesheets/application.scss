@@ -14,10 +14,6 @@
  *= require_self
  */
 
-header p {
-    
-}
-
 header {
     text-align: center;
     padding-top: 8px;
@@ -29,15 +25,23 @@ header {
     }
 }
 
+#admin {
+    font-size: 17px;
+    color: #337ab7;
+}
+
+#admin:hover {
+    cursor: pointer;
+    color: #337ab7;
+    text-decoration: underline;
+}
+
 #header-div {
     left: 36%;
     position: fixed;
 }
 
 #nav-left {
-    /*position: absolute;
-    top: 0;
-    left: 0;*/
     padding: 7px;
     font-size: 17px;
 }
@@ -45,6 +49,16 @@ header {
 .alert {
     padding: 7px;
     font-size: 17px;
+}
+
+#reg-items a:hover {
+    color: #337ab7;
+    cursor: pointer;
+}
+
+#login-items a:hover {
+    color: #337ab7;
+    cursor: pointer;
 }
 
 
