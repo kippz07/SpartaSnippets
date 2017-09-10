@@ -21,3 +21,4 @@ Start up a postgres server and set up database by doing:
 
 Run the rails server with `rails s`.
 
+Make sure all the urls in snippets.js point to the address you are running on or some features will not work.
