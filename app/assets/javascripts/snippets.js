@@ -36,7 +36,8 @@ $(function() {
             window.location.reload();
             launchFullScreen(document.documentElement);
             console.log("releaded");
-        }  
+        } 
+        return curLength;
     }
 
     function launchFullScreen (element) {
