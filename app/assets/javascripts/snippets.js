@@ -16,7 +16,8 @@ $(function() {
         }
     }, 3000);
 
-    if(window.location.href == 'http://localhost:3000/pi') {
+    if(window.location.href == 'https://spartasnippets.herokuapp.com/pi') {
+    // if(window.location.href == 'http://localhost:3000/pi') {
         $body.addClass('bg-img');
     } else {
         $body.removeClass('bg-img');
