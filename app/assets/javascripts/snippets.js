@@ -12,7 +12,8 @@ $(function() {
                 $("#a").text(data.answer);
             });
         } 
-        console.log(length);
+        var curLength = arrayLength.html();
+        checkForNewSnippets(length, arrayLength);
     }, 3000);
 
     $("#fullscreen-button").click(function (element) {
@@ -35,6 +36,7 @@ $(function() {
             window.location.reload();
             launchFullScreen(document.documentElement);
             console.log("releaded");
+            length = curLength;
         }  
     }
 
