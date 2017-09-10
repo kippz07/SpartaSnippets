@@ -11,8 +11,11 @@ $(function() {
                 $("#q").text(data.question);
                 $("#a").text(data.answer);
             });
+            console.log(length);
             var curLength = arrayLength.html();
             length = checkForNewSnippets(length, curLength);
+            console.log(curLength);
+            console.log(length);
         } 
     }, 3000);
 
