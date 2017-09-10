@@ -11,7 +11,7 @@ $(function() {
                 $('#a').text(data.answer);
             });
         }
-    }, 3000);
+    }, 30000);
 
     if(window.location.href == 'https://spartasnippets.herokuapp.com/pi') {
     // if(window.location.href == 'http://localhost:3000/pi') {
