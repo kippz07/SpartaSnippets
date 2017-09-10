@@ -13,20 +13,21 @@
   </head>
 
   <body>
-
+    
     <header>
-      <p id="reg-items"><%= render 'devise/menu/registration_items' %></p>
-      <p>|</p>
-      <p id="login-items"><%= render 'devise/menu/login_items' %></p>
+      <div id="header-div">
+        <p id="reg-items"><%= render 'devise/menu/registration_items' %></p>
+        <p>|</p>
+        <p id="login-items"><%= render 'devise/menu/login_items' %></p>
+      </div>
     </header>
 
     <div id="nav-left">
       <p class="notice nav-right"><%= notice %></p>
       <p class="alert nav-right"><%= alert %></p>
     </div>
-    
+  
     <%= yield %>
-
     
   </body>
 </html>

@@ -9,7 +9,11 @@
 }
 
 #pi-snippets {
-    margin-top: 154px;
+    margin-right: 100px;
+    margin-left: 100px;
+    position: absolute;
+    top: 230px;
+    color: powderblue;
 }
 
 #break {
@@ -35,4 +39,15 @@ p {
         color: black;
         text-decoration: underline;
     }
+}
+
+body {
+    padding-bottom: 20px;
+}
+
+.bg-img {
+    background-image: url("snippets-background2.png");
+    width: 100%;
+    background-size:cover;
+    height: -webkit-fill-available;
 }
