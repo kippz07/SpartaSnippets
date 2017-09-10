@@ -11,9 +11,9 @@ $(function() {
                 $("#q").text(data.question);
                 $("#a").text(data.answer);
             });
+            var curLength = arrayLength.html();
+            checkForNewSnippets(length, curLength);
         } 
-        var curLength = arrayLength.html();
-        checkForNewSnippets(length, arrayLength);
     }, 3000);
 
     $("#fullscreen-button").click(function (element) {
