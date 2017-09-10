@@ -9,9 +9,7 @@ class SlackController < ApplicationController
                 @snippet = Snippet.create(question: array[1], answer: array[2])
                 @snippet.save
                 render json: { text: "Snippet added" }
-            else
-                render json: { text: "Snippet not correctly formatted" }
-            end 
+            end
         end
     end
     
