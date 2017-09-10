@@ -1,14 +1,7 @@
 $(function() {
 
-    function launchFullScreen(element) {
-      if(element.requestFullScreen) {
-        element.requestFullScreen();
-      } else if(element.mozRequestFullScreen) {
-        element.mozRequestFullScreen();
-      } else if(element.webkitRequestFullScreen) {
-        element.webkitRequestFullScreen();
-      }
-    }
+    var arrayLength = $("#array-length");
+    var length = arrayLength.html();
 
     setInterval(function () {
         if(window.location.href == "https://spartasnippets.herokuapp.com/pi") {
@@ -18,23 +11,43 @@ $(function() {
                 $("#q").text(data.question);
                 $("#a").text(data.answer);
             });
-        }    
+        } 
+        console.log(length);
     }, 3000);
 
     $("#fullscreen-button").click(function (element) {
         launchFullScreen(document.documentElement);
-        $("header").slideUp();
-        $("#fullscreen-button").slideUp();
+        
     })
 
     $(document).bind('webkitfullscreenchange mozfullscreenchange fullscreenchange', function(e) {
         var state = document.fullScreen || document.mozFullScreen || document.webkitIsFullScreen;
         var event = state ? 'FullscreenOn' : 'FullscreenOff';
 
-        if(event == 'FullscreenOff'){
+        if(event == 'FullscreenOff') {
             $("header").slideDown();
             $("#fullscreen-button").slideDown();
         }  
     });
+
+    function checkForNewSnippets (oldLength, curLength) {
+        if (curLength != oldLength) {
+            window.location.reload();
+            launchFullScreen(document.documentElement);
+            console.log("releaded");
+        }  
+    }
+
+    function launchFullScreen (element) {
+        if(element.requestFullScreen) {
+        element.requestFullScreen();
+        } else if(element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+        } else if(element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+        }
+        $("header").slideUp();
+        $("#fullscreen-button").slideUp();
+    }
 
 });
