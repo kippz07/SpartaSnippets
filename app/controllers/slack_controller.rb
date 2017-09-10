@@ -6,9 +6,12 @@ class SlackController < ApplicationController
             text = params[:text]
             array = text.split('^^')
             if array.length == 3
-            @snippet = Snippet.create(question: array[1], answer: array[2])
+                @snippet = Snippet.create(question: array[1], answer: array[2])
                 @snippet.save
-            end
+                render json: { text: "Snippet added" }
+            else
+                render json: { text: "Snippet not correctly formatted" }
+            end 
         end
     end
     
