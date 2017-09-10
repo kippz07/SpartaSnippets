@@ -6,10 +6,10 @@ View the live site at https://spartasnippets.herokuapp.com/
 
 ## Package versions
 
-ruby 2.4
-rails 5.1.2
-pg 0.18
-PostgreSQL 9.6.3
+ruby 2.4  
+rails 5.1.2  
+pg 0.18  
+PostgreSQL 9.6.3  
 
 ## App and database setup
 
