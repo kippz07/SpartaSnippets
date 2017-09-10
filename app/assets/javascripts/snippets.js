@@ -11,11 +11,11 @@ $(function() {
                 $("#q").text(data.question);
                 $("#a").text(data.answer);
             });
-            console.log(length);
-            var curLength = arrayLength.html();
-            length = checkForNewSnippets(length, curLength);
-            console.log(curLength);
-            console.log(length);
+            // console.log(length);
+            // var curLength = arrayLength.html();
+            // length = checkForNewSnippets(length, curLength);
+            // console.log(curLength);
+            // console.log(length);
         } 
     }, 3000);
 
@@ -34,14 +34,14 @@ $(function() {
         }  
     });
 
-    function checkForNewSnippets (oldLength, curLength) {
-        if (curLength != oldLength) {
-            window.location.reload();
-            launchFullScreen(document.documentElement);
-            console.log("releaded");
-        } 
-        return curLength;
-    }
+    // function checkForNewSnippets (oldLength, curLength) {
+    //     if (curLength != oldLength) {
+    //         window.location.reload();
+    //         launchFullScreen(document.documentElement);
+    //         console.log("releaded");
+    //     } 
+    //     return curLength;
+    // }
 
     function launchFullScreen (element) {
         if(element.requestFullScreen) {
