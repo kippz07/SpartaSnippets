@@ -3,18 +3,18 @@ $(function() {
     var $body = $('body');
 
     setInterval(function () {
-        if(window.location.href == "https://spartasnippets.herokuapp.com/pi") {
-        // if(window.location.href == 'http://localhost:3000/pi') {
-            $.get("https://spartasnippets.herokuapp.com/pi.json", function (data) {
-            // $.get('pi.json', function (data) {
+        // if(window.location.href == "https://spartasnippets.herokuapp.com/pi") {
+        if(window.location.href == 'http://localhost:3000/pi') {
+            // $.get("https://spartasnippets.herokuapp.com/pi.json", function (data) {
+            $.get('pi.json', function (data) {
                 $('#q').text(data.question);
                 $('#a').text(data.answer);
             });
         }
     }, 30000);
 
-    if(window.location.href == 'https://spartasnippets.herokuapp.com/pi') {
-    // if(window.location.href == 'http://localhost:3000/pi') {
+    // if(window.location.href == 'https://spartasnippets.herokuapp.com/pi') {
+    if(window.location.href == 'http://localhost:3000/pi') {
         $body.addClass('bg-img');
     } else {
         $body.removeClass('bg-img');
@@ -35,8 +35,8 @@ $(function() {
     });
 
     $("#admin").click(function () {
-        window.location.replace('https://spartasnippets.herokuapp.com')
-        // window.location.replace('http://localhost:3000')
+        // window.location.replace('https://spartasnippets.herokuapp.com')
+        window.location.replace('http://localhost:3000')
     });
 
     function launchFullScreen (element) {
